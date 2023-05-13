@@ -16,3 +16,10 @@ class Style(models.Model):
     Buyer = models.CharField(max_length=225)
     def __str__(self):
         return self.StyleCode
+
+class ProductionLine(models.Model):
+    id = models.AutoField(primary_key=True)
+    ProductionLine = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.ProductionLine
